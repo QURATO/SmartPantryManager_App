@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.smartpantry.manager.R;
 import com.smartpantry.manager.database.DatabaseHelper;
 import com.smartpantry.manager.models.PantryItem;
-
+// Handles form inputs and validation for user pantry items
 public class AddEditIngredientActivity extends AppCompatActivity {
 
     private EditText etName, etQuantity, etUnit, etExpiry;
