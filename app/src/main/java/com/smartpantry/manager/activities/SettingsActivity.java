@@ -2,14 +2,14 @@ package com.smartpantry.manager.activities;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.widget.Switch;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
 
 import com.smartpantry.manager.R;
 
 public class SettingsActivity extends AppCompatActivity {
 
-    private Switch switchExpiryAlerts;
+    private SwitchCompat switchExpiryAlerts;
     private SharedPreferences sharedPreferences;
 
     @Override
@@ -17,7 +17,7 @@ public class SettingsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        switchExpiryAlerts = findViewById(R.id.switchExpiryAlerts);
+        switchExpiryAlerts = findViewById(R.id.switchAlerts);
         sharedPreferences = getSharedPreferences("SmartPantryPrefs", MODE_PRIVATE);
 
         boolean alertsEnabled = sharedPreferences.getBoolean("expiry_alerts", true);
