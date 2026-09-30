@@ -1,5 +1,5 @@
 package com.smartpantry.manager.models;
-
+// Model class representing a pantry item entity
 public class PantryItem {
     private int id;
     private String name;
