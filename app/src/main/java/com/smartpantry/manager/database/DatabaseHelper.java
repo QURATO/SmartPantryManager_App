@@ -10,7 +10,7 @@ import com.smartpantry.manager.models.PantryItem;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// SQLite database helper for managing pantry CRUD operations
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "SmartPantry.db";
