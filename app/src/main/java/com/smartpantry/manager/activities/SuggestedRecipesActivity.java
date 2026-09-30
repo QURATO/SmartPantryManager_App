@@ -12,7 +12,7 @@ import com.smartpantry.manager.models.PantryItem;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// Evaluate inventory against recipe requirements and suggest recipe requirements using strict matching
 public class SuggestedRecipesActivity extends AppCompatActivity {
 
     private ListView listViewRecipes;
